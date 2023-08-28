@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\TerraME\bin\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>No title</Title>
+
+  <Author>No author</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="OGR" id="18f49ba7-55b4-4d97-9ee4-5e3300f67d6a" type="OGR">
+      <te_da:Title>cells</te_da:Title>
+      <te_da:Description>Created on TerraME</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FUsers%2Fuser%2Fterrame-examples%2FTatiana%2FCellular%2520automaton%2Famazonia%2Fcell.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="46549248-f994-4b53-98e8-ceaffd2fb4b3" type="GDAL">
+      <te_da:Title>prodes</te_da:Title>
+      <te_da:Description>Created on TerraME</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FTerraME%2Fbin%2Fpackages%2Fgis%2Fdata%2Famazonia-prodes.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="747d1ce0-80fd-46bc-a3d4-532a73c72a7f" type="OGR">
+      <te_da:Title>il</te_da:Title>
+      <te_da:Description>Created on TerraME</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FTerraME%2Fbin%2Fpackages%2Fgis%2Fdata%2Famazonia-indigenous.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="80da08e0-be5e-4e82-bcbf-c1b4d8229ab2" type="OGR">
+      <te_da:Title>limit</te_da:Title>
+      <te_da:Description>Created on TerraME</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FTerraME%2Fbin%2Fpackages%2Fgis%2Fdata%2Famazonia-limit.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="a7e6ad3d-fe99-4381-b2dd-137ce6490e24" type="OGR">
+      <te_da:Title>roads</te_da:Title>
+      <te_da:Description>Created on TerraME</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FTerraME%2Fbin%2Fpackages%2Fgis%2Fdata%2Famazonia-roads.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="b747dccb-38e0-4eea-8e62-3e811f6b98cc" type="OGR">
+      <te_da:Title>ports</te_da:Title>
+      <te_da:Description>Created on TerraME</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FTerraME%2Fbin%2Fpackages%2Fgis%2Fdata%2Famazonia-ports.shp</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="52b29a18-6738-44bc-968c-74d7d783516a">
+      <te_map:Title>limit</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>ISO-8859-1</te_map:Encoding>
+      <te_map:DataSetName>amazonia-limit</te_map:DataSetName>
+      <te_map:DataSourceId>80da08e0-be5e-4e82-bcbf-c1b4d8229ab2</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29191</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=21 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-2205525.4201884591" lly="-1995806.6413792633" urx="1356770.2913285329" ury="586421.00744388904"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Visualization Style</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FF0000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Selection Style</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="5da7ccad-bd3e-4d1d-af6a-2fb8790179f1">
+      <te_map:Title>prodes</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>ISO-8859-1</te_map:Encoding>
+      <te_map:DataSetName>amazonia-prodes.tif</te_map:DataSetName>
+      <te_map:DataSourceId>46549248-f994-4b53-98e8-ceaffd2fb4b3</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29191</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=21 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-2208376.6540580499" lly="-1997368.2831564201" urx="1361623.3459419501" ury="587631.71684358001"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Visualization Style</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+              <se:NoDataValue>255</se:NoDataValue>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="04a0fccd-981f-4d28-b267-4fc73c800956">
+      <te_map:Title>il</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>ISO-8859-1</te_map:Encoding>
+      <te_map:DataSetName>amazonia-indigenous</te_map:DataSetName>
+      <te_map:DataSourceId>747d1ce0-80fd-46bc-a3d4-532a73c72a7f</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29191</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=21 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-2179327.1335695935" lly="-1889872.4837409419" urx="1003316.3837535663" ury="586110.82392338698"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Visualization Style</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FF0000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Selection Style</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="e8734b3d-552f-4d6f-ae57-237b27206116">
+      <te_map:Title>roads</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>ISO-8859-1</te_map:Encoding>
+      <te_map:DataSetName>amazonia-roads</te_map:DataSetName>
+      <te_map:DataSourceId>a7e6ad3d-fe99-4381-b2dd-137ce6490e24</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29191</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=21 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-2086761.583531141" lly="-1995759.1955211209" urx="1352338.2565262977" ury="501241.00732956029"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Visualization Style</se:Name>
+          <se:Rule>
+            <se:LineSymbolizer version="1.1.0">
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#FF0000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:LineSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Selection Style</se:Name>
+          <se:Rule>
+            <se:LineSymbolizer version="1.1.0">
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:LineSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="f2015c5b-ec94-461a-a484-670041633584">
+      <te_map:Title>cells</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>ISO-8859-1</te_map:Encoding>
+      <te_map:DataSetName>cell</te_map:DataSetName>
+      <te_map:DataSourceId>18f49ba7-55b4-4d97-9ee4-5e3300f67d6a</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29191</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=21 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-2205525.4201884591" lly="-1995806.6413792633" urx="1394474.5798115409" ury="604193.35862073675"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Visualization Style</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FF0000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Selection Style</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="f5f95744-f77a-4809-bc9b-e9fb250b8367">
+      <te_map:Title>ports</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>ISO-8859-1</te_map:Encoding>
+      <te_map:DataSetName>amazonia-ports</te_map:DataSetName>
+      <te_map:DataSourceId>b747dccb-38e0-4eea-8e62-3e811f6b98cc</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29191</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=21 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-1061112.1665811921" lly="-1780083.8459704123" urx="1074828.1184245977" ury="10890.942515084602"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Visualization Style</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#FF0000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Selection Style</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00FF00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+  </te_map:LayerList>
+
+</Project>
